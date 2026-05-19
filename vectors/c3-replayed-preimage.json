@@ -1,0 +1,5 @@
+{
+  "id": "C3",
+  "title": "server rejects replayed preimage with 401",
+  "scenario": "C3-replayed-preimage"
+}

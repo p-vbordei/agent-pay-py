@@ -1,0 +1,64 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-pay"
+version = "0.1.0"
+description = "L402 + DID-signed invoices: agent-to-agent Lightning payments (Python port of @p-vbordei/agent-pay)"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Vlad Bordei", email = "bordeivlad@gmail.com" }]
+requires-python = ">=3.10"
+keywords = [
+  "lightning",
+  "l402",
+  "agents",
+  "did",
+  "payments",
+  "bolt11",
+  "ed25519",
+]
+classifiers = [
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = [
+  "cryptography>=42.0",
+  "jcs>=0.2.1",
+  "base58>=2.1",
+  "bolt11>=2.1.0",
+  "httpx>=0.27",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-asyncio>=0.23",
+  "ruff>=0.5",
+  "mypy>=1.10",
+]
+
+[project.urls]
+Homepage = "https://github.com/p-vbordei/agent-pay-py"
+Reference = "https://github.com/p-vbordei/agent-pay"
+Issues = "https://github.com/p-vbordei/agent-pay-py/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agent_pay"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N", "RUF"]
+
+[tool.mypy]
+strict = true
+python_version = "3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

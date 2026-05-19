@@ -1,0 +1,5 @@
+{
+  "id": "C4",
+  "title": "client rejects when X-Did-Invoice.invoice_hash mismatches BOLT11",
+  "scenario": "C4-bolt11-hash-mismatch"
+}

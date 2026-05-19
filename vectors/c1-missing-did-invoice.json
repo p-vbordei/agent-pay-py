@@ -1,0 +1,5 @@
+{
+  "id": "C1-missing",
+  "title": "client rejects 402 missing X-Did-Invoice",
+  "scenario": "C1-missing-x-did-invoice"
+}

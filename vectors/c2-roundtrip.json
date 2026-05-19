@@ -1,0 +1,5 @@
+{
+  "id": "C2",
+  "title": "valid invoice paid, retry returns 200 with X-Payment-Receipt",
+  "scenario": "C2-roundtrip"
+}

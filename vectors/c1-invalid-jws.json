@@ -1,0 +1,5 @@
+{
+  "id": "C1-bad-sig",
+  "title": "client rejects 402 with tampered X-Did-Invoice JWS",
+  "scenario": "C1-invalid-jws"
+}
