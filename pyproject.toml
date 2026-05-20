@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "agent-pay"
+name = "kindred-agent-pay"
 version = "0.1.0"
 description = "L402 + DID-signed invoices: agent-to-agent Lightning payments (Python port of @p-vbordei/agent-pay)"
 readme = "README.md"
